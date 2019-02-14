@@ -46,6 +46,10 @@
     overflow:visible;
 }
 
+#triforce:hover{
+    cursor: cell;
+}
+
 #start {
     position: relative;
     max-width: 100%;
@@ -85,14 +89,14 @@
     transform: translate(-50%,-50%); */
 }
 
-#loading-text{
+.loading-text{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     letter-spacing: 1px;
     font-weight: lighter;
     color: rgb(25, 29, 27);
-
+    /* text-shadow: .1px .1px .3px black; */
 }
 
 /* ANIMATIONS */
