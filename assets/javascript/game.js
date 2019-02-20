@@ -3,7 +3,9 @@ $(document).ready(function () {
     var storms = new Audio("assets/images/songofstorms.mp3");
     var wins = 0;
     var losses = 0;
-    var hasChosen = false;
+    var hasChosenCharacter = false;
+    var hasChosenOpponent = false;
+
 
     var characters = [
         {
@@ -86,17 +88,43 @@ $(document).ready(function () {
     });
 
     $(document).on("click", ".character", function () {
-        if (hasChosen === false) {
+        if (hasChosenCharacter === false) {
+
+            hasChosenCharacter = true;
             var characterData = JSON.parse($(this).attr("data"));
 
             $("#chosen-character").attr("src", $(this).attr("src"));
-            hasChosen = true;
-
-            $("#chosen-name").text(characterData.name); 
+            $("#chosen-name").text(characterData.name);
             console.log(characterData);
             $("#chosen-health").text(characterData.health);
             $("#fighting-area").fadeIn();
+            $("#message").text("Choose your opponent!");
+
+            $(".grass-background").show();
+            $("body").css("background", "url('http://i.imgur.com/kyQgTTm.jpg'");
+            $("body").css("background-color", "rgba(255, 255, 255, 0.4)");
+            $("body").css("background-blend-mode", "lighten");
+            $("video").css("opacity", "1.0");
+            // $("body").css("background-repeat", "repeat");  
+
+
+            $(document).on("click", ".character", function () {
+                if (hasChosenOpponent === false) {
+
+                    hasChosenOpponent = true;
+                    var characterData = JSON.parse($(this).attr("data"));
+
+                    $("#opponent").attr("src", $(this).attr("src"));
+                    $("#opponent-name").text(characterData.name);
+                    console.log(characterData);
+                    $("#opponent-health").text(characterData.health);
+                    $("#message").text("FIGHT!");
+                    $("#fight-button").show();
+                }
+            })
         }
+
+
     });
 
 

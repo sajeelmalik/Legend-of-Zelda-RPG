@@ -37,6 +37,20 @@
     transform: translate(-50%,-50%);
   }
 
+  /* .grass-background {
+    display: none;
+    position: absolute;
+    z-index: -1;   
+    width: 100%;
+    height: 100%;
+    background-image: url('https://us.123rf.com/450wm/marbom/marbom1612/marbom161200036/68813797-green-grass-background-vector.jpg?ver=6');
+    background-repeat: repeat;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  } */
 
 /* ### LOADING ###*/
 
@@ -92,13 +106,14 @@
     transform: translate(-50%,-50%); */
 }
 
-.loading-text{
+.loading-text, #message{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     letter-spacing: 1px;
     font-weight: lighter;
     color: rgb(25, 29, 27);
+    margin-bottom: 20px;
     /* text-shadow: .1px .1px .3px black; */
 }
 
@@ -150,6 +165,15 @@
     height: auto;
 }
 
+#chosen-character, #opponent{
+    max-width: 350px;
+    height: auto;
+}
+
+
+#fight-button{
+    display: none;
+}
 /* ANIMATIONS */
 
 @keyframes force {

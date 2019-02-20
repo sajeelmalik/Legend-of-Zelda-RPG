@@ -26,6 +26,8 @@
       <source src="assets/images/botw.mp4" type="video/mp4">
     </video>
   </div>
+  <!-- <div class="grass-background">
+  </div> -->
   <!-- <h1>Legend of Zelda</h1> -->
   <div id="triforce"><img id="start" src="assets/images/triforce.png"></div>
   <div id="loading">
@@ -43,25 +45,26 @@
       <!-- <div class="row">
         <p>Choose Your Character</p>
       </div> -->
-      <div class="row mt-5" id="fighting-area">
-        <div class="col-5 d-flex align-items-center" class="fighters">
+      <div class="row mt-5 d-flex align-items-center" id="fighting-area">
+        <div class="col-5 d-flex align-items-center fighters">
           <img src="" id="chosen-character">
           <div>
             <h1 id="chosen-name"></h1>
             <span class="badge badge-primary health" id="chosen-health"></span>
           </div>
         </div>
-        <div class="col-2">
-          <button class="btn btn-danger">FIGHT!</button>
+        <div class="col-2 d-flex align-items-center">
+          <button class="btn btn-danger" id="fight-button">FIGHT!</button>
         </div>
-        <div class="col-5 d-flex align-items-center" class="fighters">
+        <div class="col-5 d-flex align-items-center fighters">
           <div>
+              <h1 id="opponent-name"></h1>
             <span class="badge badge-primary health" id="opponent-health"></span>
-            <h1 id="opponent-name"></h1>
           </div>
           <img src="" id="opponent">
         </div>
       </div>
+      <div id = "message">CHOOSE YOUR CHARACTER</div>
       <div class="row">
         <div class="col-3"><img src="assets/images/link2.png" class="character" id="link"> Link</div>
         <div class="col-3"><img src="assets/images/zelda.png" class="character" id="zelda">Zelda</div>
