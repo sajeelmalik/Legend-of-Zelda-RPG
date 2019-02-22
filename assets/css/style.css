@@ -173,6 +173,9 @@
 
 #fight-button{
     display: none;
+    border-radius: 80px;
+    padding: 15px;
+    background: radial-gradient(#DC3545, rgb(214, 85, 98));
 }
 /* ANIMATIONS */
 
