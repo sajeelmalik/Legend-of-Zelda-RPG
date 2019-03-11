@@ -31,7 +31,7 @@
     height: auto;
   
     /* Center the video */
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -109,12 +109,12 @@
 .loading-text, #message{
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    letter-spacing: 1px;
+    font-size: 1.7em;
+    letter-spacing: 2px;
     font-weight: lighter;
-    color: rgb(25, 29, 27);
+    color: #272259;
     margin-bottom: 40px;
-    /* text-shadow: .1px .1px .3px black; */
+    text-shadow: 1px 1px 30px #272259;
 }
 
 /* ### GAMEPLAY ###*/
@@ -148,6 +148,7 @@
 .character{
     width: 200px;
     height: auto;
+    color: #272259;
     transition: 0.3s ease-in-out;
 }
 

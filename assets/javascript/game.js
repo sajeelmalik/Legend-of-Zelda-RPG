@@ -14,7 +14,7 @@ $(document).ready(function () {
     var hasChosenCharacter = false;
     var hasChosenOpponent = false;
 
-
+    // initialize characters JSON
     var characters = [
         {
             id: "#link",
@@ -54,6 +54,7 @@ $(document).ready(function () {
         }
     ]
 
+    // initialize hero and opponent 
     var hero;
     var opponent;
 

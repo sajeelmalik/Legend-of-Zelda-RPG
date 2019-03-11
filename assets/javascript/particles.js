@@ -1,7 +1,7 @@
 /* eslint-disable */
 (function(global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('animejs')) :
-        typeof define === 'function' && define.amd ? define(['animejs'], factory) :
+        typeof define === 'function' && define.amd ? define(['animejs'], factory)    :
             (global.Particles = factory(global.anime));
 }(this, (function(anime) {
     'use strict';
